@@ -66,6 +66,7 @@
                 android:layout_width="35dp"
                 android:layout_height="match_parent"
                 android:layout_margin="2dp"
+                android:background="@drawable/border"
                  />
 
             <ImageView
@@ -73,6 +74,7 @@
                 android:layout_width="35dp"
                 android:layout_height="match_parent"
                 android:layout_margin="2dp"
+                android:background="@drawable/border"
                  />
 
             <ImageView
@@ -80,6 +82,7 @@
                 android:layout_width="35dp"
                 android:layout_height="match_parent"
                 android:layout_margin="2dp"
+                android:background="@drawable/border"
                  />
 
             <ImageView
@@ -87,6 +90,7 @@
                 android:layout_width="35dp"
                 android:layout_height="match_parent"
                 android:layout_margin="2dp"
+                android:background="@drawable/border"
                  />
 
             <ImageView
@@ -94,6 +98,7 @@
                 android:layout_width="35dp"
                 android:layout_height="match_parent"
                 android:layout_margin="2dp"
+                android:background="@drawable/border"
                 />
 
         </LinearLayout>
@@ -105,9 +110,36 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10"
+        android:orientation="vertical"
         android:background="@color/design_default_color_secondary">
 
-
+        <Button
+            android:id="@+id/startAnimationBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start/Stop Animation"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/rotateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rotate"/>
+            <Button
+                android:id="@+id/translateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Translate"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/rocket_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="70dp"
+            />
     </LinearLayout>
 
 </LinearLayout>
